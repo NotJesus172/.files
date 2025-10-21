@@ -10,4 +10,6 @@ rm -rf ~/.config/starship.toml
 ln -s ~/.files/starship.toml ~/.config/starship.toml
 rm -rf ~/.config/hypr
 ln -s ~/.files/hypr ~/.config/hypr
+rm -rf ~/.config/waybar
+ln -s ~/.files/waybar ~/.config/waybar
 
