@@ -26,7 +26,7 @@ unset rc
 
 #   Environment Variables
 
-export STOW_DIR="~/.files"
+export STOW_DIR="/home/naftali/.files"
 
 #   Aliases
 
