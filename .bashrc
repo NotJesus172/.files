@@ -24,6 +24,13 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+#   Aliases
+
+alias ssh='kitty +kitten ssh'
+alias ll='ls -lh'
+alias la='ls -alh'
+
+
 #   Custom BASH PS1 Prompts
 
 #   Date Tinted
