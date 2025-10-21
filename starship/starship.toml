@@ -72,8 +72,9 @@ format = '[ $ssh_symbol $hostname]($style)'
 
 [directory]
 style = "bold bg:green fg:crust"
+read_only_style = "bold bg:red fg:crust"
 format = "[ $path ]($style)"
-truncation_length = 3
+truncation_length = 7
 truncation_symbol = "…/"
 
 [directory.substitutions]
@@ -87,6 +88,7 @@ truncation_symbol = "…/"
 symbol = ""
 style = "bold bg:yellow fg:crust"
 format = '[ $symbol $branch ]($style)'
+ignore_branches = ['main','master']
 
 [git_status]
 style = "bold bg:yellow fg:crust"
