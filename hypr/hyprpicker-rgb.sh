@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-color=$(hyprpicker -f hex)
+color=$(hyprpicker -f rgb)
 
 if [ -n "$color" ]; then
     echo "$color" | wl-copy
