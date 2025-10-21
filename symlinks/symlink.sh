@@ -1,15 +1,9 @@
 #!/usr/bin/env bash
 
-sudo mkdir -p ~/.config/kitty
+stow -d ~/.files
 
-rm -rf ~/.bashrc
-ln -s ~/.files/.bashrc ~/.bashrc
-rm -rf ~/.config/kitty/kitty.conf
-ln -s ~/.files/kitty.conf ~/.config/kitty/kitty.conf
-rm -rf ~/.config/starship.toml
-ln -s ~/.files/starship.toml ~/.config/starship.toml
-rm -rf ~/.config/hypr
-ln -s ~/.files/hypr ~/.config/hypr
-rm -rf ~/.config/waybar
-ln -s ~/.files/waybar ~/.config/waybar
-
+stow -t ~ -S bash
+stow -t ~/.config -S starship
+stow -t ~/.config/kitty -S kitty
+stow -t ~/.config/hypr -S hypr
+stow -t ~/.config/waybar -S waybar
