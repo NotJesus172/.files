@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-stow -d ~/.files
-
 stow -t ~ -S bash --adopt
 stow -t ~/.config -S starship --adopt
 stow -t ~/.config/kitty -S kitty --adopt
