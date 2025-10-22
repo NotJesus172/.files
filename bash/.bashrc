@@ -30,7 +30,7 @@ alias ssh='kitty +kitten ssh'
 alias ll='ls -lh'
 alias la='ls -alh'
 alias source='source ~/.bashrc'
-
+alias hyprpolkitagent='systemctl --user start hyprpolkitagent'
 
 #   Custom Prompt Config:
 
