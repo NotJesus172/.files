@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+#   Update system
+sudo pacman -Syu
+
 #   Install stow
-sudo dnf -y in stow
+sudo pacman -S stow
 
 #   Stow package config files
 
