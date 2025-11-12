@@ -1,0 +1,17 @@
+#   Refer to the wiki for more information.
+#   https://wiki.hypr.land/Configuring/
+#   Please note not all available settings / options are set here.
+#   You can split this configuration into multiple files
+#   Create your files separately and then link them to this file like this:
+#   source = ~/.config/hypr/myColors.conf
+
+source = ~/.config/hypr/hyprland.conf.d/autostart.conf
+source = ~/.config/hypr/hyprland.conf.d/environmentvariables.conf
+source = ~/.config/hypr/hyprland.conf.d/input.conf
+source = ~/.config/hypr/hyprland.conf.d/keybindings.conf
+source = ~/.config/hypr/hyprland.conf.d/lookandfeel.conf
+source = ~/.config/hypr/hyprland.conf.d/monitors.conf
+source = ~/.config/hypr/hyprland.conf.d/myprograms.conf
+source = ~/.config/hypr/hyprland.conf.d/permissions.conf
+source = ~/.config/hypr/hyprland.conf.d/windowsandworkspaces.conf
+
