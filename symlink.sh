@@ -6,15 +6,15 @@ sudo dnf -y in stow
 #   Stow package config files
 
 #   Shell
-stow -S bash --adopt
-stow -S zsh --adopt
-stow -S starship --adopt
+stow -R bash
+stow -R zsh
+stow -R starship
 #   Userspace
-stow -S hypr --adopt
-stow -S waypaper --adopt
-stow -S waybar --adopt
+stow -R hypr
+stow -R waypaper
+stow -R waybar
 
 #  Applications
-stow -S kitty --adopt
-stow -S btop --adopt
-stow -S tor --adopt
+stow -R kitty
+stow -R btop
+stow -R tor
