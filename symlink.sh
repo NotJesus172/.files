@@ -7,6 +7,10 @@ sudo dnf -y in stow
 rm -rf ~/.bashrc
 rm -rf ~/.zshrc
 
+#  Make config directory and establish ownership
+mkdir ~/.config
+chown $USER ~/.config
+
 #   Stow package config files
 
 #   Shell
