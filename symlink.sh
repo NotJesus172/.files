@@ -2,7 +2,8 @@
 
 #   Install stow
 sudo dnf -y in stow
-
+rm -rf ~/.bashrc
+rm -rf ~/.zshrc
 #   Stow package config files
 
 #   Shell
