@@ -3,14 +3,17 @@
 #   Install stow
 sudo dnf -y in stow
 
-#   Remove previous shell config files
-rm -rf ~/.bashrc
-rm -rf ~/.zshrc
-
-#  Make config directory and establish ownership
-mkdir ~/.config
-chown $USER ~/.config
-
+if [ $USER==root ]; then
+    rm -rf /home/$SUDO_USER/.bashrc
+    rm -rf /home/$SUDO_USER/.zshrc
+    mkdir /home/$SUDO_USER/.config
+    chown $SUDO_USER /home/$SUDO_USER/.config
+else
+    rm -rf ~/.bashrc
+    rm -rf ~/.zshrc
+    mkdir ~/.config
+    chown $USER ~/.config
+fi
 #   Stow package config files
 
 #   Shell
