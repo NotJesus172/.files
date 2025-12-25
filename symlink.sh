@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+#   System update
+sudo dnf -u up
 #   Install stow
 sudo dnf -y in stow
 
